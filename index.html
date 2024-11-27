@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venda de Números Virtuais</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Venda de Números Virtuais</h1>
+      <nav>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#precos">Preços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Serviços -->
+  <section id="servicos" class="section">
+    <div class="container">
+      <h2>Escolha o Serviço</h2>
+      <div class="servicos">
+        <div class="servico">
+          <h3>Número para Verificação</h3>
+          <p>Receba um número virtual para verificação de contas.</p>
+          <button onclick="adicionarAoCarrinho('Número para Verificação')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="servico">
+          <h3>Número para WhatsApp</h3>
+          <p>Receba um número para criar uma conta no WhatsApp.</p>
+          <button onclick="adicionarAoCarrinho('Número para WhatsApp')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="servico">
+          <h3>Número para SMS</h3>
+          <p>Receba um número para receber SMS.</p>
+          <button onclick="adicionarAoCarrinho('Número para SMS')">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preços -->
+  <section id="precos" class="section">
+    <div class="container">
+      <h2>Preços</h2>
+      <div class="tabela-precos">
+        <div class="tabela-item">
+          <h3>Plano Básico</h3>
+          <p>R$ 10,00</p>
+        </div>
+        <div class="tabela-item">
+          <h3>Plano Avançado</h3>
+          <p>R$ 25,00</p>
+        </div>
+        <div class="tabela-item">
+          <h3>Plano Premium</h3>
+          <p>R$ 40,00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrinho -->
+  <section id="carrinho" class="section">
+    <div class="container">
+      <h2>Carrinho</h2>
+      <ul id="itensCarrinho">
+        <!-- Itens do carrinho aparecerão aqui -->
+      </ul>
+      <button id="finalizarCompra" onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Contato</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Venda de Números Virtuais</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
